@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Butter.Entities.UserEntity">
+    <Position X="2" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABiAAAAAAAACAAAwAAAAAAAECAAAAAAAAAAA=</HashCode>
+      <FileName>UserEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Butter.Entities.PayementEntity">
+    <Position X="4.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PayementEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Butter.Entities.SandwichEntity">
+    <Position X="6.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAQAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>SandwichEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Butter.Entities.UserSandwichEntity">
+    <Position X="6.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAIAAAAAAAAgAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>UserSandwichEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Butter.Entities.FriendEntity">
+    <Position X="4.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAABAAAAAAAAAAAAAgAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FriendEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

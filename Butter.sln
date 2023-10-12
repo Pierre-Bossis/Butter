@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Butter", "Butter\Butter.csproj", "{378589CB-4685-4EF3-A62C-D8119198ED79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{3EFD040C-090C-4DFC-8C32-473239F596A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Butter.Models", "Butter.Models\Butter.Models.csproj", "{0A3FAB65-E3A0-4DCB-BBCB-28DD06B934A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Staging|Any CPU = Staging|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{378589CB-4685-4EF3-A62C-D8119198ED79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{378589CB-4685-4EF3-A62C-D8119198ED79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{378589CB-4685-4EF3-A62C-D8119198ED79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{378589CB-4685-4EF3-A62C-D8119198ED79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{378589CB-4685-4EF3-A62C-D8119198ED79}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{378589CB-4685-4EF3-A62C-D8119198ED79}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{0A3FAB65-E3A0-4DCB-BBCB-28DD06B934A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A3FAB65-E3A0-4DCB-BBCB-28DD06B934A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A3FAB65-E3A0-4DCB-BBCB-28DD06B934A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A3FAB65-E3A0-4DCB-BBCB-28DD06B934A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A3FAB65-E3A0-4DCB-BBCB-28DD06B934A5}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{0A3FAB65-E3A0-4DCB-BBCB-28DD06B934A5}.Staging|Any CPU.Build.0 = Staging|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0A3FAB65-E3A0-4DCB-BBCB-28DD06B934A5} = {3EFD040C-090C-4DFC-8C32-473239F596A3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D13427D1-2B4D-4D82-A3BE-5703C951E664}
+	EndGlobalSection
+EndGlobal

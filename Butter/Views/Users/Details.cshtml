@@ -1,0 +1,13 @@
+﻿@model UserDetails
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details : @Model.NickName</h1>
+
+<p>Email : @Model.Email</p>
+<p>Date de naissance : @Model.BirthDate.ToString("dd MMMM yyyy")</p>
+<p>Ville : @Model.Town</p>
+<p>Genre : @Model.Genre</p>
+
+
