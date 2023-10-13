@@ -1,0 +1,26 @@
+﻿@model UserUpdate
+
+<form asp-action="Edit">
+        <input type="hidden" class="form-control" asp-for="@Model.UserId" readonly>
+    <div class="form-group">
+        <label asp-for="@Model.NickName">Nickname :</label>
+        <input type="text" class="form-control" asp-for="@Model.NickName">
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Email">Email :</label>
+        <input type="email" class="form-control" asp-for="@Model.Email">
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.BirthDate">Birthdate :</label>
+        <input type="date" class="form-control" asp-for="@Model.BirthDate">
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Town">Town</label>
+        <input type="text" class="form-control" asp-for="@Model.Town">
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Genre">Genre</label>
+        <input type="text" class="form-control" asp-for="@Model.Genre">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

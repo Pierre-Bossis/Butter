@@ -84,11 +84,53 @@ namespace Butter.Controllers
                 var json = response.Content.ReadAsStringAsync().Result;
                 var user = JsonConvert.DeserializeObject<UserModel>(json);
 
-                // autre chose que singleOrDefault dans le UserRepository (coté api)
                 return RedirectToAction("Details", new { id = user.UserId});
             }
             
             return View(u);
+        }
+
+        public IActionResult Edit(int id)
+        {
+            client.BaseAddress = new Uri("https://localhost:7199/");
+            HttpResponseMessage response = client.GetAsync($"api/users/{id}").Result;
+            if (response.IsSuccessStatusCode)
+            {
+                string json = response.Content.ReadAsStringAsync().Result;
+                UserUpdate? user = System.Text.Json.JsonSerializer.Deserialize<UserUpdate>(json, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                if (user is null)
+                {
+                    return NotFound();
+                }
+                HttpContext.Session.SetInt32("id", id);
+                return View(user);
+            }
+            else
+            {
+                return RedirectToAction("Index", "Home");
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Edit(UserUpdate user)
+        {
+            if (user.UserId != HttpContext.Session.GetInt32("id")) return View(user);
+            HttpContext.Session.Clear();
+
+            HttpContent httpContent = new StringContent(JsonConvert.SerializeObject(user), Encoding.UTF8);
+            httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+            client.BaseAddress = new Uri("https://localhost:7199/");
+            HttpResponseMessage response = client.PutAsync($"api/users/update/{user.UserId}", httpContent).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                var json = response.Content.ReadAsStringAsync().Result;
+                var u = JsonConvert.DeserializeObject<UserUpdate>(json);
+
+                // autre chose que singleOrDefault dans le UserRepository (coté api)
+                return RedirectToAction("Details", new { id = u.UserId });
+            }
+
+            return View(user);
         }
 
     }
